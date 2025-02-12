@@ -155,16 +155,14 @@ Complete the exercise in the space below:
 */
 
 function convertTemperature(temp, scale) {
-    scale = scale.toLowerCase();
-    let result = 0;
+    scale = scale.toLowerCase();   
     if (scale === 'f') {
-        result = (temp - 32) * 5 / 9;
+        return (temp - 32) * 5 / 9;
     } else if (scale === 'c') {
-        result = (temp * 9 / 5) + 32;
+        return (temp * 9 / 5) + 32;
     } else {
-        result = 'ERROR';
-    }
-    return result;
+        return 'ERROR';
+    }  
    
 }
 
