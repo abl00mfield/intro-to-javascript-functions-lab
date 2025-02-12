@@ -38,5 +38,40 @@ function isAdult(age) {
 }
 
 console.log('Exercise 2 Result:', isAdult(21));
+console.log('Exercise 2 Result:', isAdult(16));
+
+/*
+Exercise 3: isCharAVowel()
+
+Write a function named isCharAVowel that takes a single character as 
+an argument. It should return true if the character is a vowel and 
+false otherwise. For the purposes of this exercise, the character 
+y should not be considered a vowel.
+
+Example: isCharAVowel('a') should return true.
+
+Complete the exercise in the space below:
+*/
+
+function isCharAVowel(char) {
+    switch (char) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+          return true;
+        default:
+          return false;
+      } 
+}
+
+console.log('Exercise 3 Result:', isCharAVowel("t"));
+
 
   
