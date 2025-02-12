@@ -54,24 +54,19 @@ Complete the exercise in the space below:
 */
 
 function isCharAVowel(char) {
-    switch (char) {
+    switch (char.toLowerCase()) {
         case 'a':
         case 'e':
         case 'i':
         case 'o':
         case 'u':
-        case 'A':
-        case 'E':
-        case 'I':
-        case 'O':
-        case 'U':
-          return true;
+            return true;
         default:
-          return false;
+            return false;
       } 
 }
 
-console.log('Exercise 3 Result:', isCharAVowel("t"));
+console.log('Exercise 3 Result:', isCharAVowel("A"));
 
 /*
 Exercise 4: generateEmail()
